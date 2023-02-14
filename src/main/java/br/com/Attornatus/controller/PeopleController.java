@@ -4,7 +4,7 @@ package br.com.Attornatus.controller;
 
 
 import br.com.Attornatus.controller.dto.PeopleDto;
-import br.com.Attornatus.entities.People;
+import br.com.Attornatus.model.People;
 import br.com.Attornatus.service.PeopleService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
@@ -35,9 +35,6 @@ public class PeopleController {
     @GetMapping("/{id}")
     public ResponseEntity<Object> findById(@PathVariable Long id){
         Optional<People> peopleOptional = peopleService.findById(id);
-        if (!peopleOptional.isPresent()){
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Pessoa não encontrada");
-        }
         return ResponseEntity.status(HttpStatus.OK).body(peopleOptional.get());
     }
 

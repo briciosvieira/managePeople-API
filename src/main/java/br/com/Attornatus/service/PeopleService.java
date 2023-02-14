@@ -1,5 +1,5 @@
 package br.com.Attornatus.service;
-import br.com.Attornatus.entities.People;
+import br.com.Attornatus.model.People;
 import br.com.Attornatus.repository.PeopleRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

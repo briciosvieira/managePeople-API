@@ -1,4 +1,4 @@
-package br.com.Attornatus.entities;
+package br.com.Attornatus.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

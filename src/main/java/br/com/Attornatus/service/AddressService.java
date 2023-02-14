@@ -1,6 +1,6 @@
 package br.com.Attornatus.service;
 
-import br.com.Attornatus.entities.Address;
+import br.com.Attornatus.model.Address;
 import br.com.Attornatus.repository.AddressRepository;
 import org.springframework.stereotype.Service;
 

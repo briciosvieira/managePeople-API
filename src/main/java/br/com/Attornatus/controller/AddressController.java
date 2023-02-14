@@ -1,6 +1,6 @@
 package br.com.Attornatus.controller;
 import br.com.Attornatus.controller.dto.AddressDto;
-import br.com.Attornatus.entities.Address;
+import br.com.Attornatus.model.Address;
 import br.com.Attornatus.service.AddressService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
